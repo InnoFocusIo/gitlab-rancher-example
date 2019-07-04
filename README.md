@@ -30,7 +30,7 @@ docker-compose up -d
 
 register gitlab-runner to the gitlab instance:
 ````
-docker exec -it gitlabrunner_web_1 bash
+docker exec -it gitlab-runner_web_1 bash
 gitlab-runner register
 ````
 * coordinator URL: http://DOCKER_MACHINE_IP

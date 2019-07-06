@@ -40,6 +40,15 @@ gitlab-runner register
 
 check registered runner on Gitlab UI: login as root in Gitlab UI >> admin area >> runners
 
+#### 1.2.1 test ssh clone
+
+* create key using 'ssh-keygen' in console
+* login as hillman in Gitlab UI -> Settings -> SSH Keys
+* paste 'cat id_rsa.pub' content into SSH Keys textarea.
+* append "47.92.50.148 git.innofocus.io" into /etc/hosts
+* test it `git clone git@git.innofocus.io:InnoFocusIo/kubanische-kaninchenzuechterei.git`
+
+
 #### 1.3 create a Gitlab user
 
 #### 1.4 create a Gitlab repository
